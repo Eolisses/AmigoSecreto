@@ -2,36 +2,58 @@
   font-size: larger;
 }									  
 
-        /* Define estilos básicos */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-        /* Container flexível para centralizar o conteúdo */
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-            background-color: #f0f0f0;
-        }
+html, body {
+  height: 100%;
+}
 
-        /* Estilos para o conteúdo principal */
-        h1 {
-            font-size: 2rem;
-            color: #333;
-        }
+ /* Define estilos básicos */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altura total da viewport */
+  font-family: Arial, sans-serif;		
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-        p {
-            font-size: 1.2rem;
-            color: #666;
-            text-align: center;
-        }
+ /* Container flexível para centralizar o conteúdo */
+.container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   padding: 20px;
+   height: 100%; /* Altura do container */
+   /*background:#732581;*/   
+   background-image:  url("img/presente_amigo_secreto.jpg");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed; /* não vai rolar com a página */  
+}
+
+/* Estilos para o conteúdo principal */
+h1 {
+    font-size: 2rem;
+    color: #333;
+   }
+
+p {
+    /*font-size: 1.2rem;*/
+	font-size: 24px;
+    color: #666;
+    text-align: center;
+	font-weight: bold;
+}
 
         /* Estilo responsivo: ajusta o layout para telas menores */
         @media (max-width: 600px) {
