@@ -32,7 +32,7 @@ document.getElementById("nomeUsuario").addEventListener("change", function() {
     nomeUsuario = this.value;
         
     // Exibe a mensagem personalizada ao usuário
-    document.getElementById("mensagem").textContent = nomeUsuario;
+    document.getElementById("mensagem").innerHTML ="<H1>"+ nomeUsuario + "</H1>";
         
     // Habilita o botão de sortear
     document.getElementById("btnSortear").disabled = false;
