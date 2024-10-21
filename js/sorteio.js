@@ -58,9 +58,8 @@ function sortearAmigo() {
     const indiceSorteado = Math.floor(Math.random() * nomesPossiveis.length);
     const amigoSecreto = nomesPossiveis[indiceSorteado];
 
-    // Exibe o nome do amigo secreto             
-    
-    document.getElementById("amigoSecreto").textContent = "<<< " + amigoSecreto + " >>>";
+    // Exibe o nome do amigo secreto              
+    document.getElementById("amigoSecreto").innerHTML = "<H1>"+ "<<< " + amigoSecreto + " >>>" + "</H1>";
     
     // Desativa o botão de sortear
     document.getElementById("btnSortear").disabled = true;
