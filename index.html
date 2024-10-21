@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">                                             
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link href="css/stylus.css" rel="stylesheet" />
+    <title>Amigo Secreto 2024</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;    
+            /*background:#732581;*/   
+            background-image:  url("img/amigo_secreto.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* não vai rolar com a página */   
+        }    
+        
+        /* Cria uma camada semi-transparente */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.5); /* Cor branca semi-transparente */
+            z-index: 1; /* Mantém a camada sobre a imagem */
+        }
+
+        /* Estilo para o conteúdo, para ficar acima da camada */
+        .content {
+            position: relative;
+            z-index: 2; /* Mantém o conteúdo acima da camada */
+            color: black; /* Torna o texto visível */
+            text-align: center;
+            margin-top: 20vh;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        select, button {
+            padding: 10px;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        #mensagem, #amigoSecreto {
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+
+        #amigoSecreto {
+            font-size: 2rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body> 
+    <div id="conteudo">     </div>                            
+    
+    <!-- Mensagem ao usuário -->
+    <h1><div id="mensagem">     </div></h1>
+
+    <!-- Botão para descobrir o amigo secreto -->
+    <button id="btnSortear" onclick="sortearAmigo()" disabled> Clique aqui para descobrir o seu Amigo Secreto</button>
+
+    <!-- Exibe o nome do amigo secreto -->
+    <div id="amigoSecreto"> </div>  
+    <!-- Botão para sair do sistema -->
+    <button id="btnSair" onclick="sairSistema()" style="display:none;">Sair do Sistema</button>
+
+    <script src="js/sorteio.js"></script>
+</body>
+</html>

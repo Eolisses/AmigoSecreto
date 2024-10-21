@@ -1,0 +1,45 @@
+.bigger {
+  font-size: larger;
+}									  
+
+        /* Define estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Container flexível para centralizar o conteúdo */
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        /* Estilos para o conteúdo principal */
+        h1 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #666;
+            text-align: center;
+        }
+
+        /* Estilo responsivo: ajusta o layout para telas menores */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
