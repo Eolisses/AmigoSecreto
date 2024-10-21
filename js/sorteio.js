@@ -13,7 +13,7 @@ function limparDiv() {
 const conteudoDiv = document.getElementById('conteudo');
 const htmlParaSelect  = "<h1>Selecione o seu nome:</h1></p>" +
                         "<select id='nomeUsuario'>"+
-                          "<option value='' disabled selected>Escolha seu nome</option>" +
+                          "<option value='' disabled selected>Toque aqui para selecionar o seu nome</option>" +
                           "<option value='Carlinha'>Carlinha</option>" +
                           "<option value='César'>César</option>" +
                           "<option value='Damaris'>Damaris</option>" +
@@ -59,7 +59,8 @@ function sortearAmigo() {
     const amigoSecreto = nomesPossiveis[indiceSorteado];
 
     // Exibe o nome do amigo secreto              
-    document.getElementById("amigoSecreto").innerHTML = "<p><p><p><p><p><H1><b>"+ "***  " + amigoSecreto + "  ***" + "</b></H1>";
+    document.getElementById("amigoSecreto").innerHTML = "<p><p><p><p><p><p><p><p><p><p><H1><b>"+ 
+                                                      "***  " + amigoSecreto + "  ***" + "</b></H1>";
     
     // Desativa o botão de sortear
     document.getElementById("btnSortear").disabled = true;
