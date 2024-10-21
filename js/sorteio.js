@@ -59,7 +59,7 @@ function sortearAmigo() {
     const amigoSecreto = nomesPossiveis[indiceSorteado];
 
     // Exibe o nome do amigo secreto              
-    document.getElementById("amigoSecreto").innerHTML = "<p><p><p><H1><b>"+ "<<< " + amigoSecreto + " >>>" + "</b></H1>";
+    document.getElementById("amigoSecreto").innerHTML = "<p><p><p><p><p><H1><b>"+ "***  " + amigoSecreto + "  ***" + "</b></H1>";
     
     // Desativa o botão de sortear
     document.getElementById("btnSortear").disabled = true;
